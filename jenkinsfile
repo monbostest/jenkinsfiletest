@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage(Checkout code){
-            sh git clone https://github.com/monbostest/jenkinsfiletest.git
+            sh git 'https://github.com/monbostest/nodejs-image-demo.git'
         }
     }
 }
